@@ -25,6 +25,10 @@ body {
     background-color: #CCCCCC;
 }
 
+.bg_col_one {
+    background-color: #808080;
+}
+
 .h_250 {
     height: 250px;
 }

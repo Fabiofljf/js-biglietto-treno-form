@@ -19,3 +19,8 @@ console.log(kmDaPercorrere);
 const elementKm = document.querySelector('.km')
     //richiamo il nome
 elementKm.innerHTML = kmDaPercorrere
+
+//funzione nome
+function myFunction() {
+    document.querySelector("fullName").value = "fullName";
+}
