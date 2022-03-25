@@ -17,14 +17,43 @@
 
 <body>
 
-    <header id="site_header"></header>
-    <!-- /#site_header -->
+    <main id="site_main">
+        <section class="calcola_prezzo">
+            <h1 class="text-uppercase text-center my-3">Calcola il prezzo del tuo biglietto</h1>
+            <div class="container">
+                <div class="row bg_white h_250 rounded-3">
+                    <div class="col-4 d-flex flex-column align-self-center">
+                        <h6 class="text-center text_c mb-4">Km da percorrere</h6>
+                        <div class="nomeCognomeVuoto align-self-center border border-danger rounded-3 text-center px-3">ciao</div>
+                    </div>
+                    <!-- /prima colonna -->
+                    <div class="col-4 d-flex flex-column align-self-center">
+                        <h6 class="text-center text_c mb-4">Nome Cognome</h6>
+                        <div class="nomeCognomeVuoto align-self-center border border-danger rounded-3 text-center px-3"></div>
+                    </div>
+                    <!-- /seconda colonna -->
+                    <div class="col-4 d-flex flex-column align-self-center">
+                        <h6 class="text-center text_c mb-4">Fascia d'età</h6>
+                        <select class="align-self-center border border-danger rounded-3 text-center px-3">
+                            <option value="M">Maschio</option>
+                            <option value="F">Femmina</option>
+                        </select>
+                    </div>
+                    <!-- /terza colonna -->
+                    <div class="col-12 offset-5 align-self-center g-3">
+                        <button type="button" class="btn btn_bg text_c">Genera</button>
+                        <button type="button" class="btn btn_bg text_c">Annulla</button>
+                    </div>
+                    <!-- /quarta colonna -->
+                </div>
+            </div>
+        </section>
+        <!-- /.calcola_prezzo -->
 
-    <main id="site_main"></main>
+        <section class="biglietto"></section>
+        <!-- /.biglietto -->
+    </main>
     <!-- /#site_main -->
-
-    <footer id="site_footer"></footer>
-    <!-- /#site_footer -->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

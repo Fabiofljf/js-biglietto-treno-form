@@ -1,0 +1,30 @@
+/* common roules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B91450;
+}
+
+
+/* utility */
+
+.bg_white {
+    background-color: white;
+}
+
+.text_c {
+    color: #B91450;
+}
+
+.btn_bg {
+    background-color: #CCCCCC;
+}
+
+.h_250 {
+    height: 250px;
+}
