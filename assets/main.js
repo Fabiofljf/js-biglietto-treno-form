@@ -4,7 +4,7 @@ console.log(fullName);
 
 //richiamo il nome dell'utente nella mia pagina html
 //seleziono l'elemento della pagina
-const elementName = document.querySelector('.nomeCognomeVuoto')
+const elementName = document.querySelector('.nomeUser')
     //richiamo il nome
 elementName.innerHTML = fullName
 
@@ -25,7 +25,3 @@ elementKm.innerHTML = kmDaPercorrere
 //Voglio estrarre l'imput (nome) dell'utente
 //seleziono l'elemento della pagina
 //const elementuser = document.querySelector()
-
-function myFunction() {
-    document.getElementById("myText").value = "ciao";
-}
