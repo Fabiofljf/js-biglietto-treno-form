@@ -9,7 +9,6 @@ const elementName = document.querySelector('.nomeCognomeVuoto')
 elementName.innerHTML = fullName
 
 
-
 //chiedo all'utente i km da percorrere
 const kmDaPercorrere = prompt('Quanti km devi percorrere?')
 console.log(kmDaPercorrere);
@@ -20,7 +19,13 @@ const elementKm = document.querySelector('.km')
     //richiamo il nome
 elementKm.innerHTML = kmDaPercorrere
 
-//funzione nome
+
+
+
+//Voglio estrarre l'imput (nome) dell'utente
+//seleziono l'elemento della pagina
+//const elementuser = document.querySelector()
+
 function myFunction() {
-    document.querySelector("fullName").value = "fullName";
+    document.getElementById("myText").value = "ciao";
 }
