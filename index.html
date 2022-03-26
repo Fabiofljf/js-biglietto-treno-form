@@ -4,36 +4,96 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Biglietto treno forum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Biglietto Treno form</title>
 </head>
 
 <body>
 
-    <button type="button" id="btn_click">click</button>
+    <section class="calcola_prezzo">
+        <h1 class="text-uppercase text-center my-3">Calcola il prezzo del tuo biglietto</h1>
+        <div class="container">
+            <div class="row bg_white h_250 rounded-3">
+                <div class="col-4 d-flex flex-column align-self-center">
+                    <h6 class="text-center text_c mb-4">Nome Cognome</h6>
+                    <input type="text" class="align-self-center border border-danger rounded-3 text-center px-3" id="nome_utente" value="">
+                </div>
+                <!-- /prima colonna -->
+                <div class="col-4 d-flex flex-column align-self-center">
+                    <h6 class="text-center text_c mb-4">Km da percorrere</h6>
+                    <input type="text" class="align-self-center border border-danger rounded-3 text-center px-3" id="km_utente" value="">
+                </div>
+                <!-- /seconda colonna -->
+                <div class="col-4 d-flex flex-column align-self-center">
+                    <h6 class="text-center text_c mb-4">Fascia d'età</h6>
+                    <select class="align-self-center border border-danger rounded-3 text-center px-3" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="normale">Normale</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+                <!-- /terza colonna -->
+                <div class="col-12 offset-5 align-self-center g-3">
+                    <button type="button" class="btn btn_bg text_c" id="btn_click">Genera</button>
+                    <button type="button" class="btn btn_bg text_c" id="btn_click_annulla">Annulla</button>
+                </div>
+                <!-- /quarta colonna -->
+            </div>
+        </div>
+    </section>
+    <!-- /.calcola_prezzo -->
 
-    <input type="text" id="nome_utente" value="">
-    <div id="testo_nome"></div>
-    <!-- /input - nome utente -->
+    <section class="biglietto">
+        <h1 class="text-uppercase text-center my-3">Il tuo biglietto</h1>
+        <div class="container">
+            <div class="row bg_white h_250 rounded-3">
+                <div class="col-4 bg_col_one h_250">
+                    <h2>NOME PASSEGGERO</h2>
+                    <div class="text-uppercase fs-2 text_strong" id="testo_nome"></div>
+                </div>
+                <div class="col d-flex">
+                    <div class="col d-flex flex-column justify-content-around">
+                        <h2>Offerta</h2>
+                        <h4 id="tipologia"></h4>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-around">
+                        <h2>Carrozza</h2>
+                        <h4 id="carrozza"></h4>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-around">
+                        <h2>Codice CP</h2>
+                        <h4 id="codicecp"></h4>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-around">
+                        <h2>Costo biglietto</h2>
+                        <h4 id="finale"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.biglietto -->
 
-    <input type="text" id="km_utente" value="">
-    <!-- /input - chiedo km -->
 
-    <div>
-        <h6 id="eta">Fascia d'età</h6>
-        <select>
-            <option value="minorenne" >Minorenne</option>
-            <option value="normale">Normale</option>
-            <option value="over65">Over 65</option>
-        </select>
-    </div>
-    <div id="tipologia"></div>
-    <!-- /chiedo l'età -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <div id="finale"></div>
-    <!-- /prezzo finale -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Link JS -->
     <script src="./assets/main.js"></script>
 </body>
 
